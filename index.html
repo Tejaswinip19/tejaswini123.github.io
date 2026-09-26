@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio</title>
+    <title>Tejaswini | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
+
     <header>
         <nav>
-            <h2>My Portfolio</h2>
 
-            <ul>
+            <div class="logo">
+                TEJASWINI
+            </div>
+
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -27,78 +31,115 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
 
-    <!-- Home -->
-    <section id="home">
+    <!-- HOME -->
 
-        <div>
-            <h1>Hello, I'm <span>P Tejaswini</span></h1>
+    <section id="home" class="hero">
 
-            <h2>Computer Science Engineering Student</h2>
+        <div class="hero-content">
+
+            <p class="small-text">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hi, I'm <span>Tejaswini P</span>
+            </h1>
+
+            <h2>
+                Computer Science Engineering Student
+            </h2>
 
             <p>
-                Interested in Programming, Web Development,
-                and Cybersecurity.
+                Passionate about Programming, Web Development,
+                Artificial Intelligence and Cybersecurity.
             </p>
 
-            <a href="#projects">View My Projects</a>
+            <div class="buttons">
 
-            <a href="resume/resume.pdf" target="_blank">
-                Download Resume
-            </a>
+                <a href="#projects" class="btn">
+                    View Projects
+                </a>
+
+                <a href="resume/resume.pdf"
+                   class="btn outline"
+                   target="_blank">
+                    Download Resume
+                </a>
+
+            </div>
+
         </div>
 
     </section>
 
 
-    <!-- About -->
+    <!-- ABOUT -->
+
     <section id="about">
 
-        <h2>About Me</h2>
+        <h2 class="section-title">
+            About Me
+        </h2>
 
-        <p>
-            I am a Computer Science Engineering student interested in
-            programming, web development, and cybersecurity. 
-            I enjoy learning new technologies and developing 
-            practical projects.
-        </p>
+        <div class="about-box">
+
+            <p>
+                I am a Computer Science Engineering student with
+                an interest in programming, web development,
+                artificial intelligence and cybersecurity.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and building
+                practical projects that solve real-world problems.
+            </p>
+
+        </div>
 
     </section>
 
 
-    <!-- Skills -->
+    <!-- SKILLS -->
+
     <section id="skills">
 
-        <h2>My Skills</h2>
+        <h2 class="section-title">
+            My Skills
+        </h2>
 
-        <div class="skills">
+        <div class="card-container">
 
-            <div>
-                <h3>Programming</h3>
-                <p>C</p>
-                <p>Python</p>
+            <div class="card">
+                <h3>Python</h3>
+                <p>Programming & Problem Solving</p>
             </div>
 
-            <div>
-                <h3>Web Development</h3>
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
+            <div class="card">
+                <h3>C</h3>
+                <p>Programming Fundamentals</p>
             </div>
 
-            <div>
-                <h3>Tools</h3>
-                <p>Git</p>
-                <p>GitHub</p>
-                <p>VS Code</p>
+            <div class="card">
+                <h3>HTML & CSS</h3>
+                <p>Web Development</p>
             </div>
 
-            <div>
-                <h3>Other</h3>
-                <p>Cybersecurity</p>
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Interactive Websites</p>
+            </div>
+
+            <div class="card">
+                <h3>AI / ML</h3>
+                <p>Machine Learning Projects</p>
+            </div>
+
+            <div class="card">
+                <h3>Cybersecurity</h3>
+                <p>Security Fundamentals</p>
             </div>
 
         </div>
@@ -106,121 +147,188 @@
     </section>
 
 
-    <!-- Projects -->
+    <!-- PROJECTS -->
+
     <section id="projects">
 
-        <h2>My Projects</h2>
+        <h2 class="section-title">
+            My Projects
+        </h2>
 
-        <div class="project">
+        <div class="card-container">
 
-            <h3>Neurological Disease Detection Using AI</h3>
+            <div class="project-card">
 
-            <p>
-                A multimodal AI system for detecting neurological
-                diseases using MRI images, voice recordings and EEG signals.
-            </p>
+                <h3>
+                    Neurological Disease Detection Using AI
+                </h3>
 
-            <p>
-                <b>Technologies:</b> Python, AI, Machine Learning
-            </p>
+                <p>
+                    A multimodal AI system designed to detect
+                    neurological diseases using MRI images,
+                    voice recordings and EEG signals.
+                </p>
 
-            <a href="#">GitHub</a>
+                <p class="tech">
+                    Python | AI | Machine Learning
+                </p>
 
-        </div>
+                <a href="#" class="project-btn">
+                    GitHub
+                </a>
+
+            </div>
 
 
-        <div class="project">
+            <div class="project-card">
 
-            <h3>Personal Portfolio Website</h3>
+                <h3>
+                    Personal Portfolio Website
+                </h3>
 
-            <p>
-                A personal website to showcase my skills, projects,
-                certificates and achievements.
-            </p>
+                <p>
+                    A modern responsive portfolio website
+                    showcasing my skills, projects and achievements.
+                </p>
 
-            <p>
-                <b>Technologies:</b> HTML, CSS, JavaScript
-            </p>
+                <p class="tech">
+                    HTML | CSS | JavaScript
+                </p>
 
-            <a href="#">GitHub</a>
+                <a href="#" class="project-btn">
+                    GitHub
+                </a>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- Certificates -->
+    <!-- CERTIFICATES -->
+
     <section id="certificates">
 
-        <h2>Certificates</h2>
+        <h2 class="section-title">
+            Certificates
+        </h2>
 
-        <ul>
-            <li>Python Certificate</li>
-        </ul>
+        <div class="card-container">
+
+            <div class="card">
+                <h3>Python Certificate</h3>
+                <p>Programming Achievement</p>
+            </div>
+
+            <div class="card">
+                <h3>Cybersecurity Certificate</h3>
+                <p>Cybersecurity Training</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Web Technologies</p>
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- Achievements -->
+    <!-- ACHIEVEMENTS -->
+
     <section id="achievements">
 
-        <h2>Achievements</h2>
+        <h2 class="section-title">
+            Achievements
+        </h2>
 
-        <ul>
-            <li>3 Stars in Python on HackerRank</li>
-            <li>Participated in technical activities</li>
-            <li>Completed programming projects</li>
-        </ul>
+        <div class="card-container">
+
+            <div class="card">
+                <h3>⭐ HackerRank</h3>
+                <p>3 Stars in Python</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Projects</h3>
+                <p>Developed academic and personal projects</p>
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- Education -->
+    <!-- EDUCATION -->
+
     <section id="education">
 
-        <h2>Education</h2>
+        <h2 class="section-title">
+            Education
+        </h2>
 
-        <h3>Bachelor of Engineering</h3>
+        <div class="education-box">
 
-        <p>
-            Computer Science Engineering
-        </p>
+            <h3>
+                Bachelor of Engineering
+            </h3>
 
-        <p>
-            SJM Institute Of Technology
-        </p>
+            <p>
+                Computer Science Engineering
+            </p>
+
+            <p>
+                SJM Institute Of Technology
+            </p>
+
+            <p>
+                Chitradurga
+            </p>
+
+        </div>
 
     </section>
 
 
-    <!-- Contact -->
+    <!-- CONTACT -->
+
     <section id="contact">
 
-        <h2>9353287973</h2>
+        <h2 class="section-title">
+            Contact Me
+        </h2>
 
-        <p>Email: paladugutejaswini04@gmail.com</p>
+        <div class="9353287973">
 
-        <p>
-            GitHub:
-            <a href="#">Tejaswinip19</a>
-        </p>
+            <p>
+                📧 paladugutejaswini04@gmail.com
+            </p>
 
-        <p>
-            LinkedIn:
-            <a href="#">Tejaswini Paladugu</a>
-        </p>
+            <p>
+                🔗 GitHub
+            </p>
+
+            <p>
+                🔗 LinkedIn
+            </p>
+
+        </div>
 
     </section>
 
 
-    <!-- Footer -->
+    <!-- FOOTER -->
+
     <footer>
 
         <p>
-            © 2026 P Tejaswini. All Rights Reserved.
+            © 2026 Tejaswini P | Personal Portfolio
         </p>
 
     </footer>
+
 
 </body>
 
